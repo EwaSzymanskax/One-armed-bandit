@@ -1,6 +1,6 @@
 class Draw {
     constructor() {
-    this.options = ['red', 'green', 'blue'];
+    this.options = ['#FF0080', '#003153', '#FEFE33'];
     let _result = this.drawResult()
     this.getDrawResult = () => _result;
     }
@@ -9,7 +9,7 @@ class Draw {
         let colors = [];
         for (let i=0; i < this.options.length; i++) {
             const index = Math.floor(Math.random() * this.options.length)
-            const color = this.options[index]
+            const color = this.options[index] 
             colors.push(color)
         }
 

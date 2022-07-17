@@ -3,7 +3,7 @@ class Wallet {
         let _money = money;
         this.getWalletValue = () => _money;
 
-        this.checkCanPlay = (value) =>  {
+        this.checkCanPlay = value =>  {
             if(_money >= value) return true;
             return false;
         }
